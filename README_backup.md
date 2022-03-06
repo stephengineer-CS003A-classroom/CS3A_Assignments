@@ -1,27 +1,38 @@
-# Assignment links:
+# <p align="center">Do NOT _accept_ these assignments </p>
 
-## labs:
+## <p align="center">until you are told to do so by me</p>
 
-- |[`lab-00`](https://github.com/CS3A-classroom/lab0_writeup), [basic_test.cpp](basic_tests/lab-00/basic_test.cpp)<br/>
-- |[`lab-01 array functions`](), [basic_test.cpp]<br/>
-- |[`lab-02`](), [basic_test.cpp]<br/>
-- |[`lab-03`]()<br/>
-- |[`lab-0`5]()<br/>
+<br/>
 
-## chapter 9:
+# <p align="center">CS3A Assignment Links</p>
 
-- [`09.p2 delete_repeats`](), [basic_test.cpp](basic_tests/09-p2-delete_repeats/basic_test.cpp)<br />
-- [`09-03 union_intersection`](), [basic_test.cpp](basic_tests/09-03-union_intersection/basic_test.cpp)<br />
-- [`09-p6 add_entry`](), [basic_test,cpp](basic_tests/09-p6-add_entry/basic_test.cpp)<br />
-- [`09-p3-p5 lab_and_plane`](), [basic_test.cpp](basic_tests/09-p3-lab_and_plane/basic_test.cpp)<br />
+## Labs
 
-## chapter 10, 11:
+- [`00_lab_0`](https://classroom.github.com/), [basic_test.cpp](basic_tests/00_lab_0/basic_test.cpp)<br />
+- [`00_lab_1_array_library_testing_suite`](https://classroom.github.com/a/p02xacUI), [basic_test.cpp](basic_tests/00_lab_1/basic_test.cpp)<br />
+- [`00_lab_2`]()<br/>
+- [`00_lab_3`]()<br/>
+- [`00_lab_4`]()<br/>
 
-- [`10-p6 counter_type`](), [`basic_test.cpp`](basic_tests/10-p6-counter_type/basic_test.cpp)<br />
-- [`10-p6 moms_counter`](), [`basic_test.cpp`]<br />
-- [`11-p2 rational`](), [`basic_test.cpp`](basic_tests/11-p2-rational/basic_test.cpp)<br />
-- [`11-p1-vector`](), [`basic_test.cpp`](basic_tests/11-p1-vector/basic_test.cpp)<br />
-- [`11-p6-polynomial`](), [`basic_test.cpp`](basic_tests/11-p6-polynomial/basic_test.cpp)<br />
+## Chapter 9
+
+- [`09_00_fun_with_pointers`](https://classroom.github.com/a/IRC876ms)<br />
+- [`09_01_pointer_array_functions`](https://classroom.github.com/a/adfUtOuD), [basic_test.cpp](basic_tests/09_01_pointer_array_functions/basic_test.cpp)<br />
+- [`09_p2_delete_repeats`](https://classroom.github.com/a/vZtmeQ3x), [basic_test.cpp](basic_tests/09_p2_delete_repeats/basic_test.cpp)<br />
+- [`09_03_union_intersection`](), [basic_test.cpp](basic_tests/09_03_union_intersection/basic_test.cpp)<br />
+- [`09_p6_add_entry`](), [basic_test,cpp](basic_tests/09_p6_add_entry/basic_test.cpp)<br />
+- [`09_p5_lab_and_plane`](), [basic_test.cpp](basic_tests/09_p5_lab_and_plane/basic_test.cpp)<br />
+
+## Chapter 10
+
+- [`10_e3_counter_type`](), [`basic_test.cpp`](basic_tests/10_e3_counter_type/basic_test.cpp)<br />
+- [`10_p6_moms_counter`](), [`basic_test.cpp`](basic_tests/10_p6_moms_counter/basic_test.cpp)<br />
+
+## Chapter 11
+
+- [`11_p2_rational`](), [`basic_test.cpp`](basic_tests/11_p2_rational/basic_test.cpp)<br />
+- [`11_p1_vector`](), [`basic_test.cpp`](basic_tests/11_p1_vector/basic_test.cpp)<br />
+- [`11_p6_polynomial`](), [`basic_test.cpp`](basic_tests/11_p6_polynomial/basic_test.cpp)<br />
 
 ## chapter 13:
 

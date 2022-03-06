@@ -14,9 +14,9 @@
 
 ## Chapter 9
 
-- [`09_00_EXTRA_fun_with_pointers`](https://classroom.github.com/a/IRC876ms), NO basic_test.cpp<br />
+- [`09_00_fun_with_pointers`](https://classroom.github.com/a/IRC876ms)<br />
 - [`09_01_pointer_array_functions`](https://classroom.github.com/a/adfUtOuD), [basic_test.cpp](basic_tests/09_01_pointer_array_functions/basic_test.cpp)<br />
-- [`09.p2 delete_repeats`](https://classroom.github.com/a/vZtmeQ3x), [basic_test.cpp](basic_tests/09-p2-delete_repeats/basic_test.cpp)<br />
+- [`09_p2_delete_repeats`](https://classroom.github.com/a/vZtmeQ3x), [basic_test.cpp](basic_tests/09-p2-delete_repeats/basic_test.cpp)<br />
 - [`09-03 union_intersection`], [basic_test.cpp](basic_tests/09-03-union_intersection/basic_test.cpp)<br />
 - [`09.00 EXTRA: fun_with_dynamic_arrays`](https://classroom.github.com/a/vZcOyz9U), [NO basic_test.cpp]<br />
 - [`09-p6 add_entry`](https://classroom.github.com/a/lhTwoGSe), [basic_test.cpp](basic_tests/09-p6-add_entry/basic_test.cpp)<br />
