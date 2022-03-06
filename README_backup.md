@@ -30,7 +30,7 @@
 
 ## Chapter 10
 
-- [`10_e3_counter_type`](), [`basic_test.cpp`](basic_tests/10_e3_counter_type/basic_test.cpp)<br />
+- [`10_01_counter_type`](), [`basic_test.cpp`](basic_tests/10_01_counter_type/basic_test.cpp)<br />
 - [`10_p6_moms_counter`](), [`basic_test.cpp`](basic_tests/10_p6_moms_counter/basic_test.cpp)<br />
 
 
