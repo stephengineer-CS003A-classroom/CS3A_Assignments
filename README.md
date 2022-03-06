@@ -6,6 +6,7 @@
 
 # <p align="center">CS3A Assignment Links</p>
 
+
 ## Labs
 
 - [`00_lab_0`](https://classroom.github.com/), [basic_test.cpp](basic_tests/00_lab_0/basic_test.cpp)<br />
@@ -26,13 +27,19 @@
 - [`09_00_EXTRA_func_with_two_d_pointers`](https://classroom.github.com/a/9Y3H8Pci), [NO basic_test.cpp]<br />
 - [`09_p5_lab_and_plane`](), [basic_test.cpp](basic_tests/09_p5_lab_and_plane/basic_test.cpp)<br />
 
-## Chapter 10, 11:
 
-- [`10-p6 counter_type`](https://classroom.github.com/a/QE5CLJ1-), [`basic_test.cpp`](basic_tests/10-p6-counter_type/basic_test..cpp)<br />
-- [`10-p6 moms_counter`](https://classroom.github.com/a/noDza1ZR), [`basic_test.cpp`](basic_tests/10_p6_moms_counter/basic_test.cpp)<br />
-- [`11-p2 rational`](https://classroom.github.com/a/ZNfu6rgz), [`basic_test.cpp`](basic_tests/11-p2-rational/basic_test.cpp)<br />
-- [`11-p1-vector`](https://classroom.github.com/a/nKAOa0d_), [`basic_test.cpp`](basic_tests/11-p1-vector/basic_test.cpp)<br />
-- [`11-p6-polynomial`](https://classroom.github.com/a/YGY460Si), [`basic_test.cpp`](basic_tests/11-p6-polynomial/basic_test.cpp)<br />
+## Chapter 10
+
+- [`10_e3_counter_type`](), [`basic_test.cpp`](basic_tests/10_e3_counter_type/basic_test.cpp)<br />
+- [`10_p6_moms_counter`](), [`basic_test.cpp`](basic_tests/10_p6_moms_counter/basic_test.cpp)<br />
+
+
+## Chapter 11
+
+- [`11_p2_rational`](), [`basic_test.cpp`](basic_tests/11_p2_rational/basic_test.cpp)<br />
+- [`11_p1_vector`](), [`basic_test.cpp`](basic_tests/11_p1_vector/basic_test.cpp)<br />
+- [`11_p6_polynomial`](), [`basic_test.cpp`](basic_tests/11_p6_polynomial/basic_test.cpp)<br />
+
 
 ## Chapter 13:
 
