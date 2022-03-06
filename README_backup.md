@@ -1,4 +1,4 @@
-# <p align="center">Do NOT _accept_ these assignments </p>
+# <p align="center">Do NOT _accept_ assignment </p>
 
 ## <p align="center">until you are told to do so by me</p>
 
@@ -40,31 +40,29 @@
 - [`11_p1_vector`](), [`basic_test.cpp`](basic_tests/11_p1_vector/basic_test.cpp)<br />
 - [`11_p6_polynomial`](), [`basic_test.cpp`](basic_tests/11_p6_polynomial/basic_test.cpp)<br />
 
-## chapter 13:
+## Chapter 13
 
-- [`13-linked_list_functions`](), [`basic_test.cpp`]<br />
-- [`13-simple_list`](), [`basic_test.cpp`](basic_tests/13-list_simple/basic_test.cpp)<br />
-- [`13-stack_n_queue`](), [`basic_test.cpp`](basic_tests/13-stack_n_queue/basic_test.cpp)<br />
-- [`13-sorted_list`](), [`basic_test.cpp`](basic_tests/13-list_sorted/basic_test.cpp)<br />
-- [`13-poly_list`](), [`basic_test.cpp`](basic_tests/13-poly_list/basic_test.cpp)<br />
-- [`13-iterated_list`](), [`basic_test.cpp`](basic_tests/13-list_iterated/basic_test.cpp)<br />
-
-
-## chapter 15:
-
-- [15-predator_prey](), [`basic_test.cpp`]<br />
-- [15-rpn](), [`basic_test.cpp`]<br />
-- [15-rpn_shunting_yard](), [`basic_test.cpp`]<br />
-- [ ](), [`basic_test.cpp`]<br />
-- [ ](), [`basic_test.cpp`]<br />
+- [`13_linked_list_functions`](), [`basic_test.cpp`]<br />
+- [`13_simple_list`](), [`basic_test.cpp`](basic_tests/13-list_simple/basic_test.cpp)<br />
+- [`13_stack_n_queue`](), [`basic_test.cpp`](basic_tests/13-stack_n_queue/basic_test.cpp)<br />
+- [`13_sorted_list`](), [`basic_test.cpp`](basic_tests/13-list_sorted/basic_test.cpp)<br />
+- [`13_poly_list`](), [`basic_test.cpp`](basic_tests/13-poly_list/basic_test.cpp)<br />
+- [`13_iterated_list`](), [`basic_test.cpp`](basic_tests/13-list_iterated/basic_test.cpp)<br />
 
 
-## final project
+## Chapter 15
+
+- [15_predator_prey](), [`basic_test.cpp`]<br />
+- [15_rpn](), [`basic_test.cpp`]<br />
+- [15_rpn_shunting_yard](), [`basic_test.cpp`]<br />
+
+
+## Final project
 
 - [`final_project`](), [`basic_test.cpp`]<br />
 
 
-## SFML:
+## SFML
 
 - [start_SFML]()<br />
 - [bouncing_bubbles]()<br />
