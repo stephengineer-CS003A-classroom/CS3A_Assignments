@@ -10,6 +10,9 @@
 
 - [`00_lab_0`](https://classroom.github.com/), [basic_test.cpp](basic_tests/00_lab_0/basic_test.cpp)<br />
 - [`00_lab_1_array_library_testing_suite`](https://classroom.github.com/a/p02xacUI), [basic_test.cpp](basic_tests/00_lab_1/basic_test.cpp)<br />
+- [`00_lab_2`]()<br/>
+- [`00_lab_3`]()<br/>
+- [`00_lab_4`]()<br/>
 
 
 ## Chapter 9
