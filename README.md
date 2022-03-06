@@ -50,18 +50,20 @@
 - [`13-poly_list`](), [`basic_test.cpp`](basic_tests/13-poly_list/basic_test.cpp)<br />
 - [`13-iterated_list`](), [`basic_test.cpp`](basic_tests/13-list_iterated/basic_test.cpp)<br />
 
-## SFML:
-
-- [start_SFML](https://classroom.github.com/a/aSSkyzPk)<br />
-- [bouncing bubbles](https://classroom.github.com/a/LxZMA8mY)<br />
-- [bouncing shapes](https://classroom.github.com/a/go1Mz8Lr)
-
 ## Chapter 15:
 
 - [15-predator_prey](https://classroom.github.com/a/nOSmDF_n), [`basic_test.cpp`](basic_tests/15-p9-predator-prey/basic_test.cpp), [output gif](basic_tests/15-p9-predator-prey/Predator_prey.gif)<br />
 - [15-predator_prey_SFML](https://classroom.github.com/a/18y4-6aW), [`basic_test.cpp`]<br />
 - [15-rpn_shunting_yard](https://classroom.github.com/a/RivqFj8e), [`basic_test.cpp`](basic_tests/15_rpn_shunting_yard/basic_test.cpp)<br />
 
+
 ## Final project
 
 - [`final_project`](https://classroom.github.com/a/cinAbsYq), [`basic_test.cpp`]<br />
+
+
+## SFML:
+
+- [start_SFML](https://classroom.github.com/a/aSSkyzPk)<br />
+- [bouncing bubbles](https://classroom.github.com/a/LxZMA8mY)<br />
+- [bouncing shapes](https://classroom.github.com/a/go1Mz8Lr)
