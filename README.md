@@ -10,10 +10,6 @@
 ## Labs
 
 - [`00_lab_0`](https://classroom.github.com/a/kk1kb4Ne), [basic_test.cpp](basic_tests/00_lab_0/basic_test.cpp)<br />
-- [`00_lab_1_array_library_testing_suite`](), [basic_test.cpp](basic_tests/00_lab_1/basic_test.cpp)<br />
-- [`00_lab_2`]()<br/>
-- [`00_lab_3`]()<br/>
-- [`00_lab_4`]()<br/>
 
 
 ## Chapter 9
@@ -40,14 +36,15 @@
 - [`11_p1_vector`](), [`basic_test.cpp`](basic_tests/11_p1_vector/basic_test.cpp)<br />
 - [`11_p6_polynomial`](), [`basic_test.cpp`](basic_tests/11_p6_polynomial/basic_test.cpp)<br />
 
+
 ## Chapter 13
 
 - [`13_linked_list_functions`](), [`basic_test.cpp`]<br />
-- [`13_simple_list`](), [`basic_test.cpp`](basic_tests/13-list_simple/basic_test.cpp)<br />
-- [`13_stack_n_queue`](), [`basic_test.cpp`](basic_tests/13-stack_n_queue/basic_test.cpp)<br />
-- [`13_sorted_list`](), [`basic_test.cpp`](basic_tests/13-list_sorted/basic_test.cpp)<br />
-- [`13_poly_list`](), [`basic_test.cpp`](basic_tests/13-poly_list/basic_test.cpp)<br />
-- [`13_iterated_list`](), [`basic_test.cpp`](basic_tests/13-list_iterated/basic_test.cpp)<br />
+- [`13_simple_list`](), [`basic_test.cpp`](basic_tests/13_list_simple/basic_test.cpp)<br />
+- [`13_stack_n_queue`](), [`basic_test.cpp`](basic_tests/13_stack_n_queue/basic_test.cpp)<br />
+- [`13_sorted_list`](), [`basic_test.cpp`](basic_tests/13_list_sorted/basic_test.cpp)<br />
+- [`13_poly_list`](), [`basic_test.cpp`](basic_tests/13_poly_list/basic_test.cpp)<br />
+- [`13_iterated_list`](), [`basic_test.cpp`](basic_tests/13_list_iterated/basic_test.cpp)<br />
 
 
 ## Chapter 15
