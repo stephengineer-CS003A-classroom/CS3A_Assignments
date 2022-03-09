@@ -3,7 +3,7 @@
 #include <iomanip>
 
 //------------------------------------------------------------------------------------------
-//@TODO: include all files we are testing:
+//Files we are testing:
 #include "../../includes/array_functions/array_functions.h"
 
 
@@ -54,7 +54,8 @@ TEST(BASIC_TEST, BasicTest)
 }
 
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
   ::testing::InitGoogleTest(&argc, argv);
   std::cout<<"\n\n----------running basic_test.cpp---------\n\n"<<std::endl;
   return RUN_ALL_TESTS();
@@ -79,15 +80,15 @@ includes
 [----------] Global test environment set-up.
 [----------] 1 test from BASIC_TEST
 [ RUN      ] BASIC_TEST.BasicTest
-after init: ( 5)   [  -1  -1  -1  -1  -1 ]
-( 6)   [  -1  -1  -1  -1  -1  50 ]
-( 7)   [  -1  -1  -1  -1  -1  50  60 ]
-( 8)   [  -1  -1  -1  -1  -1  50  60  70 ]
-( 9)   [  -1  -1  -1  -1  -1  50  60  70  80 ]
-(10)   [  -1  -1  -1  -1  -1  50  60  70  80  90 ]
+after init: ( 5)    [  -1  -1  -1  -1  -1 ]
+( 6)    [  -1  -1  -1  -1  -1  50 ]
+( 7)    [  -1  -1  -1  -1  -1  50  60 ]
+( 8)    [  -1  -1  -1  -1  -1  50  60  70 ]
+( 9)    [  -1  -1  -1  -1  -1  50  60  70  80 ]
+(10)    [  -1  -1  -1  -1  -1  50  60  70  80  90 ]
 found 70 at: 70
 changing 70 to 700: 
-(10)   [  -1  -1  -1  -1  -1  50  60  700  80  90 ]
+(10)    [  -1  -1  -1  -1  -1  50  60 700  80  90 ]
 [       OK ] BASIC_TEST.BasicTest (1 ms)
 [----------] 1 test from BASIC_TEST (1 ms total)
 [----------] Global test environment tear-down
