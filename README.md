@@ -16,11 +16,8 @@
 
 - [`09_00_EXTRA_fun_with_pointers`](), [NO basic_test.cpp]<br />
 - [`09_01_pointer_array_functions`](https://classroom.github.com/a/45WayU5_), [basic_test.cpp](basic_tests/09_01_pointer_array_functions/basic_test.cpp)<br />
-- [`09_p2_delete_repeats`](), [basic_test.cpp](basic_tests/09_p2_delete_repeats/basic_test.cpp)<br />
-- [`09_03_union_intersection`](), [basic_test.cpp](basic_tests/09_03_union_intersection/basic_test.cpp)<br />
-- [`09_00_EXTRA_fun_with_dynamic_arrays`](), [NO basic_test.cpp]<br />
-- [`09_p6_add_entry`](), [basic_test,cpp](basic_tests/09_p6_add_entry/basic_test.cpp)<br />
-- [`09_00_EXTRA_func_with_two_d_pointers`](), [NO basic_test.cpp]<br />
+- [`09_p2_delete_repeats`](https://classroom.github.com/a/FtIOrYhs), [basic_test.cpp](basic_tests/09_p2_delete_repeats/basic_test.cpp)<br />
+- [`09_p6_add_entry`](https://classroom.github.com/a/lbZU9bOM), [basic_test,cpp](basic_tests/09_p6_add_entry/basic_test.cpp)<br />
 - [`09_p5_lab_and_plane`](), [basic_test.cpp](basic_tests/09_p5_lab_and_plane/basic_test.cpp)<br />
 
 
