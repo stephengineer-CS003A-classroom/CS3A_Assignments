@@ -6,52 +6,62 @@
 #include <vector>
 #include <list>
 
+//------------------------------------------------------------------------------------------
+//Files we are testing:
 #include "../../includes/add_entry/add_entry.h"
+#include "../../includes/array_functions/array_functions.h"
+
+
+//------------------------------------------------------------------------------------------
 
 using namespace std;
-
 
 bool test_basic_add_entry_int(bool debug = false){
   cout << "MINIMUM_CAPACITY: " << MINIMUM_CAPACITY << endl;
   int capacity = MINIMUM_CAPACITY;
   int *arr = allocate<int>(capacity);
   int size = 0;
+
+  // add_entry
   for (int i = 0; i < 15; i++){
     cout << "adding [" << i << "] ";
     arr = add_entry(arr, i, size, capacity);
     print_array(arr, size, capacity);
   }
+  cout << endl;
 
+  // search_entry
   int* index = search_entry(arr, size, 4);
-  cout << endl
-       << "search_entry returned: " << *index << endl;
+  int found = index == nullptr ? -1 : *index;
+  cout << "search_entry returned: " << found << endl;
+  cout << endl;
 
+  // remove_entry
   arr = remove_entry(arr, 4, size, capacity);
   cout << "removed [4]: ";
   print_array(arr, size, capacity);
-  cout << endl
-       << endl;
+  cout << endl;
+
+  // insert_entry
   arr = insert_entry(arr, 99, 4, size, capacity);
   cout << "inserted 99 at position 4: ";
   print_array(arr, size, capacity);
-  cout << endl
-       << endl;
+  cout << endl;
+
+  // erase_entry
   arr = erase_entry(arr, 4, size, capacity);
-  cout << "removed item at position 4 (the 99): ";
+  cout << "erased item at position 4 (the 99): ";
   print_array(arr, size, capacity);
-  cout << endl
-       << endl;
+  cout << endl;
 
-  for (int i = size - 1; i >= 0; i--)
-  {
+  // remove_last_entry
+  for (int i = size - 1; i >= 0; i--) {
     int item;
-    ;
-
     arr = remove_last_entry(arr, item, size, capacity);
     cout << "removed: [" << item << "] ";
     print_array(arr, size, capacity);
   }
-    cout << "----- end of function --------" << endl;
+  cout << "----- end of function --------\n";
 
   return true;
 }
@@ -62,58 +72,57 @@ bool test_basic_add_entry_string(bool debug = false){
   string *arr = allocate<string>(capacity);
   string list[10] = {"vector", "BST", "Pair", "Map", "Multimap", "Stack", "Queue"};
   int size = 0;
+
+  // add_entry
   for (int i = 0; i < 7; i++){
     cout << "adding [" << i << "] ";
     arr = add_entry(arr, string(list[i]), size, capacity);
     print_array(arr, size, capacity);
   }
+  cout << endl;
 
+  // search_entry
   string* index = search_entry(arr, size,string("Map"));
-  cout << endl
-       << "search_entry returned: " << *index << endl;
+  cout << "search_entry returned: " << *index << endl;
+  cout << endl;
 
+  // remove_entry
   arr = remove_entry(arr, string("Map"), size, capacity);
-  cout << "removed [Map]: ";
+  cout << "removed: [Map]: ";
   print_array(arr, size, capacity);
-  cout << endl
-       << endl;
+  cout << endl;
 
-  for (int i = size - 1; i >= 0; i--)
-  {
+  // remove_last_entry
+  for (int i = size - 1; i >= 0; i--) {
     string item;
     arr = remove_last_entry(arr, item, size, capacity);
     cout << "removed: [" << item << "] ";
     print_array(arr, size, capacity);
   }
-    cout << "----- end of function --------" << endl;
+  cout << "----- end of function --------\n";
 
   return true;
 }
 
 
-//----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
 //Lord help me! 
-bool debug = false;
-//----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
+const bool debug = false;
 
+TEST(TEST_BASIC, TestBasicInt)
+{
+  bool success = test_basic_add_entry_int(debug);
+  EXPECT_EQ(success, true);
+}
 
-TEST(TEST_BASIC, TestBasicInt){
-  bool success =test_basic_add_entry_int(debug);
+TEST(TEST_BASIC, TestBasicString)
+{
+  bool success = test_basic_add_entry_string(debug);
   EXPECT_EQ(success, true);
 }
 
 
-TEST(TEST_BASIC, TestBasicString){
-  bool success =test_basic_add_entry_string(debug);
-  EXPECT_EQ(success, true);
-}
-
-
-
-int main(int argc, char **argv) {
-  if (argc>1){
-    debug = argv[1][0]=='t';
-  }
+int main(int argc, char **argv)
+{
   ::testing::InitGoogleTest(&argc, argv);
   std::cout<<"\n\n---------- running basic_test ---------\n\n"<<std::endl;
   return RUN_ALL_TESTS();
@@ -121,8 +130,6 @@ int main(int argc, char **argv) {
 
 
 /*
-
-
 build git:(master) ✗  😊 $> tr ..
 ..
 ├── _tests
@@ -136,16 +143,12 @@ build git:(master) ✗  😊 $> tr ..
 ├── cmake
 └── includes
     ├── add_entry
+    │   └── add_entry.h
     └── array_functions
-
+        └── array_functions.h
 12 directories, 0 files
 build git:(master) ✗  😊 $> ./bin/basic_test
-
-
-
 ---------- running basic_test ---------
-
-
 [==========] Running 2 tests from 1 test case.
 [----------] Global test environment set-up.
 [----------] 2 tests from TEST_BASIC
@@ -168,14 +171,12 @@ adding [13] (14/24) [    0     1     2     3     4     5     6     7     8     9
 adding [14] (15/24) [    0     1     2     3     4     5     6     7     8     9    10    11    12    13    14 ]
 
 search_entry returned: 4
-removed [4]: (14/24) [    0     1     2     3     5     6     7     8     9    10    11    12    13    14 ]
 
+removed [4]: (14/24) [    0     1     2     3     5     6     7     8     9    10    11    12    13    14 ]
 
 inserted 99 at position 4: (15/24) [    0     1     2     3    99     5     6     7     8     9    10    11    12    13    14 ]
 
-
-removed item at position 4 (the 99): (14/24) [    0     1     2     3     5     6     7     8     9    10    11    12    13    14 ]
-
+erased item at position 4 (the 99): (14/24) [    0     1     2     3     5     6     7     8     9    10    11    12    13    14 ]
 
 removed: [14] (13/24) [    0     1     2     3     5     6     7     8     9    10    11    12    13 ]
 removed: [13] (12/24) [    0     1     2     3     5     6     7     8     9    10    11    12 ]
@@ -204,8 +205,8 @@ adding [5] ( 6/ 6) [vector   BST  Pair   Map Multimap Stack ]
 adding [6] ( 7/12) [vector   BST  Pair   Map Multimap Stack Queue ]
 
 search_entry returned: Map
-removed [Map]: ( 6/12) [vector   BST  Pair Multimap Stack Queue ]
 
+removed: [Map]: ( 6/12) [vector   BST  Pair Multimap Stack Queue ]
 
 removed: [Queue] ( 5/12) [vector   BST  Pair Multimap Stack ]
 removed: [Stack] ( 4/12) [vector   BST  Pair Multimap ]
@@ -216,7 +217,6 @@ removed: [vector] ( 0/ 6) []
 ----- end of function --------
 [       OK ] TEST_BASIC.TestBasicString (1 ms)
 [----------] 2 tests from TEST_BASIC (1 ms total)
-
 [----------] Global test environment tear-down
 [==========] 2 tests from 1 test case ran. (2 ms total)
 [  PASSED  ] 2 tests.
