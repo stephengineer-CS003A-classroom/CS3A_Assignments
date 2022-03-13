@@ -23,15 +23,15 @@
 
 ## Chapter 10
 
-- [`10_01_counter_type`](), [`basic_test.cpp`](basic_tests/10_01_counter_type/basic_test.cpp)<br />
-- [`10_p6_moms_counter`](), [`basic_test.cpp`](basic_tests/10_p6_moms_counter/basic_test.cpp)<br />
+- [`10_01_counter_type`](https://classroom.github.com/a/26nhNR2i), [`basic_test.cpp`](basic_tests/10_01_counter_type/basic_test.cpp)<br />
+- [`10_p6_moms_counter`](https://classroom.github.com/a/rkyf-f_J), [`basic_test.cpp`](basic_tests/10_p6_moms_counter/basic_test.cpp)<br />
 
 
 ## Chapter 11
 
-- [`11_p2_rational`](), [`basic_test.cpp`](basic_tests/11_p2_rational/basic_test.cpp)<br />
-- [`11_p1_vector`](), [`basic_test.cpp`](basic_tests/11_p1_vector/basic_test.cpp)<br />
-- [`11_p6_polynomial`](), [`basic_test.cpp`](basic_tests/11_p6_polynomial/basic_test.cpp)<br />
+- [`11_p2_rational`](https://classroom.github.com/a/ixAXqqJR), [`basic_test.cpp`](basic_tests/11_p2_rational/basic_test.cpp)<br />
+- [`11_p1_vector`](https://classroom.github.com/a/OkCDKcOM), [`basic_test.cpp`](basic_tests/11_p1_vector/basic_test.cpp)<br />
+- [`11_p6_polynomial`](https://classroom.github.com/a/ciTm8wKV), [`basic_test.cpp`](basic_tests/11_p6_polynomial/basic_test.cpp)<br />
 
 
 ## Chapter 13
