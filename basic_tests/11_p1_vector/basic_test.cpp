@@ -5,12 +5,15 @@
 #include <set>
 #include <vector>
 #include <list>
+
 #include "../../includes/vector/vector_class.h"
 
 using namespace std;
+
 bool stub(bool debug = false){
   return true;
 }
+
 bool test_vector(bool debug = false){
   int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
   Vector<int> v(a, 10);
@@ -34,6 +37,16 @@ bool test_vector(bool debug = false){
   v += 12;
   v += 13;
   cout << "vector capacity is now: " << v.capacity() << endl;
+  cout << v << endl;
+  v.push_back(14);
+  v.push_back(15);
+  cout << v << endl;
+  int popped;
+  v.pop_back();
+  v.pop_back();
+  v.pop_back();
+  popped = v.pop_back();
+  cout << popped << " is popped back from vector" << endl;
   cout << v << endl;
   cout << "vector is empty: " << boolalpha << v.empty() << endl;
   cout << "\n\n-------- D O N E -------------\n" << endl;
@@ -70,51 +83,32 @@ includes
 │   └── array_functions.h
 └── vector
     └── vector_class.h
-
-
 ----------running basic_test.cpp---------
-
-
 [==========] Running 1 test from 1 test case.
 [----------] Global test environment set-up.
 [----------] 1 test from TEST_BASIC_TEST
 [ RUN      ] TEST_BASIC_TEST.BasicTest
 (10/12) [    0     1     2     3     4     5     6     7     8     9 ]
-
 (10/12) [  100     1     2     3     4     5     6     7     8     9 ]
-
 (10/12) [  100   101     2     3     4     5     6     7     8     9 ]
-
 (10/12) [ 1000   101     2     3     4     5     6     7     8    99 ]
-
 (11/12) [ 1000   101     2     3     4     5     6     7     8    99    10 ]
-
 (12/12) [ 1000   101     2   300     3     4     5     6     7     8    99    10 ]
-
 (11/12) [ 1000   101     2   300     3     5     6     7     8    99    10 ]
-
 8 is at index: [8]
 vector size is now: 11
 vector capacity is now: 12
 vector capacity is now: 24
-(13/24) [ 1000   101     2   300     3     5     6     7     8    99    10    12    13 ]
-
+(13/24)   [1000 101   2 300   3   5   6   7   8  99  10  12  13 ]
+(15/24)   [1000 101   2 300   3   5   6   7   8  99  10  12  13  14  15 ]
+12 is popped back from vector
+(11/24)   [1000 101   2 300   3   5   6   7   8  99  10 ]
 vector is empty: false
-
-
 -------- D O N E -------------
-
 [       OK ] TEST_BASIC_TEST.BasicTest (0 ms)
 [----------] 1 test from TEST_BASIC_TEST (0 ms total)
-
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test case ran. (1 ms total)
 [  PASSED  ] 1 test.
 ➜  build git:(master) ✗ 
-
-
 */
-
-
-
-
