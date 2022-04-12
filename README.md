@@ -44,17 +44,16 @@
 - [`13_p3_poly_list`](), [`basic_test.cpp`](basic_tests/13_p3_poly_list/basic_test.cpp)<br />
 
 
-
 ## Chapter 15
 
-- [15_predator_prey](), [`basic_test.cpp`]<br />
-- [15_rpn](), [`basic_test.cpp`]<br />
-- [15_rpn_shunting_yard](), [`basic_test.cpp`]<br />
+- [15_07_rpn_shunting_yard](), [`basic_test.cpp`](basic_tests/15_07_rpn_shunting_yard/basic_test.cpp)<br />
+- [15_p9_predator_prey](), [`basic_test.cpp`](basic_tests/15_p9_predator_prey/basic_test.cpp)<br />
+- [15_p9_predator_prey_SFML](), [NO basic_test.cpp]<br />
 
 
 ## Final project
 
-- [`final_project`](), [`basic_test.cpp`]<br />
+- [`final_project`](), [NO basic_test.cpp]<br />
 
 
 ## SFML
