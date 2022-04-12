@@ -36,7 +36,7 @@
 
 ## Chapter 13
 
-- [`13_00_linked_list_functions`](), [NO basic_test.cpp]<br />
+- [`13_00_linked_list_functions`](), [`NO basic_test.cpp`]<br />
 - [`13_03_simple_list_class`](), [`basic_test.cpp`](basic_tests/13_03_simple_list_class/basic_test.cpp)<br />
 - [`13_07_iterated_list`](), [`basic_test.cpp`](basic_tests/13_07_iterated_list/basic_test.cpp)<br />
 - [`13_09_sorted_list`](), [`basic_test.cpp`](basic_tests/13_09_sorted_list/basic_test.cpp)<br />
