@@ -9,16 +9,16 @@
 
 ## Labs
 
-- [`00_lab_0`](https://classroom.github.com/a/kk1kb4Ne), [basic_test.cpp](basic_tests/00_lab_0/basic_test.cpp)<br />
+- [`00_lab_0`](https://classroom.github.com/a/kk1kb4Ne), [`basic_test.cpp`](basic_tests/00_lab_0/basic_test.cpp)<br />
 
 
 ## Chapter 9
 
-- [`09_00_EXTRA_fun_with_pointers`](), [NO basic_test.cpp]<br />
-- [`09_01_pointer_array_functions`](https://classroom.github.com/a/45WayU5_), [basic_test.cpp](basic_tests/09_01_pointer_array_functions/basic_test.cpp)<br />
-- [`09_p2_delete_repeats`](https://classroom.github.com/a/FtIOrYhs), [basic_test.cpp](basic_tests/09_p2_delete_repeats/basic_test.cpp)<br />
-- [`09_p6_add_entry`](https://classroom.github.com/a/lbZU9bOM), [basic_test,cpp](basic_tests/09_p6_add_entry/basic_test.cpp)<br />
-- [`09_p5_lab_and_plane`](https://classroom.github.com/a/j4M04cBJ), [basic_test.cpp](basic_tests/09_p5_lab_and_plane/basic_test.cpp)<br />
+- [`09_00_EXTRA_fun_with_pointers`](), [`NO basic_test.cpp`]<br />
+- [`09_01_pointer_array_functions`](https://classroom.github.com/a/45WayU5_), [`basic_test.cpp`](basic_tests/09_01_pointer_array_functions/basic_test.cpp)<br />
+- [`09_p2_delete_repeats`](https://classroom.github.com/a/FtIOrYhs), [`basic_test.cpp`](basic_tests/09_p2_delete_repeats/basic_test.cpp)<br />
+- [`09_p6_add_entry`](https://classroom.github.com/a/lbZU9bOM), [`basic_test,cpp`](basic_tests/09_p6_add_entry/basic_test.cpp)<br />
+- [`09_p5_lab_and_plane`](https://classroom.github.com/a/j4M04cBJ), [`basic_test.cpp`](basic_tests/09_p5_lab_and_plane/basic_test.cpp)<br />
 
 
 ## Chapter 10
@@ -48,12 +48,12 @@
 
 - [15_07_rpn_shunting_yard](), [`basic_test.cpp`](basic_tests/15_07_rpn_shunting_yard/basic_test.cpp)<br />
 - [15_p9_predator_prey](), [`basic_test.cpp`](basic_tests/15_p9_predator_prey/basic_test.cpp)<br />
-- [15_p9_predator_prey_SFML](), [NO basic_test.cpp]<br />
+- [15_p9_predator_prey_SFML](), [`NO basic_test.cpp`]<br />
 
 
 ## Final project
 
-- [`final_project`](), [NO basic_test.cpp]<br />
+- [`final_project`](), [`NO basic_test.cpp`]<br />
 
 
 ## SFML
