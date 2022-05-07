@@ -47,17 +47,14 @@
 ## Chapter 15
 
 - [`15_07_rpn_shunting_yard`](), [`basic_test.cpp`](basic_tests/15_07_rpn_shunting_yard/basic_test.cpp)<br />
-- [`15_p9_predator_prey`](), [`basic_test.cpp`](basic_tests/15_p9_predator_prey/basic_test.cpp)<br />
-- [`15_p9_predator_prey_SFML`](), [`NO basic_test.cpp`]<br />
-
 
 ## Final project
 
-- [`final_project`](), [`NO basic_test.cpp`]<br />
+- [`99_00_final_project`]()<br />
 
 
 ## SFML
 
 - [`start_SFML`]()<br />
 - [`bouncing_bubbles`]()<br />
-- [`bouncing_shapes`]()
+- [`bouncing_shapes`]()<br />
