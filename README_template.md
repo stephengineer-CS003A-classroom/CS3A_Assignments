@@ -10,6 +10,7 @@
 ## Labs
 
 - [`00_lab_0`](), [`basic_test.cpp`](basic_tests/00_lab_0/basic_test.cpp)<br />
+- [`00_lab_0_NoTest`](), [`basic_test.cpp`](basic_tests/00_lab_0/basic_test.cpp)<br />
 - [`00_lab_1_array_library_testing_suite`](), [`basic_test.cpp`](basic_tests/00_lab_1/basic_test.cpp)<br />
 - [`00_lab_2`]()<br/>
 - [`00_lab_3`]()<br/>
