@@ -10,6 +10,7 @@
 ## Labs
 
 - [`00_lab_0`](https://classroom.github.com/a/kk1kb4Ne), [`basic_test.cpp`](basic_tests/00_lab_0/basic_test.cpp)<br />
+- - [`00_lab_0_NoTest`](https://classroom.github.com/a/wKEXwRpX), [`basic_test.cpp`](basic_tests/00_lab_0/basic_test.cpp)<br />
 
 
 ## Chapter 9
