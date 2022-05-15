@@ -39,7 +39,6 @@
 - [`13_07_iterated_list`](https://classroom.github.com/a/PhOp9RKU), [`basic_test.cpp`](basic_tests/13_07_iterated_list/basic_test.cpp)<br />
 - [`13_09_sorted_list`](https://classroom.github.com/a/DFYTSZHc), [`basic_test.cpp`](basic_tests/13_09_sorted_list/basic_test.cpp)<br />
 - [`13_04_stack_queue`](https://classroom.github.com/a/zPjvrm7d), [`basic_test.cpp`](basic_tests/13_04_stack_queue/basic_test.cpp)<br />
-- [`13_p3_poly_list`](https://classroom.github.com/a/w6s7QJxd), [`basic_test.cpp`](basic_tests/13_p3_poly_list/basic_test.cpp)<br />
 
 
 ## Chapter 15
