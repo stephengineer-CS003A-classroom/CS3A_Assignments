@@ -19,7 +19,7 @@
 ## Chapter 9
 
 - [`09_00_EXTRA_fun_with_pointers`](), [`NO basic_test.cpp`]<br />
-- [`09_01_pointer_array_functions`](), [`basic_test.cpp`](basic_tests/09_01_pointer_array_functions/basic_test.cpp)<br />
+- [`09_01_pointer_array_functions`](), [`basic_test.cpp`](basic_tests/09_01_array_functions/basic_test.cpp)<br />
 - [`09_p2_delete_repeats`](), [`basic_test.cpp`](basic_tests/09_p2_delete_repeats/basic_test.cpp)<br />
 - [`09_03_union_intersection`](), [`basic_test.cpp`](basic_tests/09_03_union_intersection/basic_test.cpp)<br />
 - [`09_00_EXTRA_fun_with_dynamic_arrays`](), [`NO basic_test.cpp`]<br />
