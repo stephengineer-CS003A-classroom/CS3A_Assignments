@@ -187,6 +187,7 @@ bool pointer_array_functions_basic_test(bool debug=false)
   print_array(a, size, capacity);
   array_string(a, size);
   cout << "  array to string: " << array_string(a, size) << endl;
+  delete [] a;
   cout << " Feel free to change the way the string is constructed: " << endl;
   cout << "                          commas, better spacing, etc." << endl;
 
