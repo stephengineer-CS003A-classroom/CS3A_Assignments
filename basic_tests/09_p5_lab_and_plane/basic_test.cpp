@@ -25,7 +25,7 @@ using namespace std;
 bool basic_test_two_d_array(bool debug = false)
 {
   int sizes[] = {4,5,3,6,-1};
-  int **td = allocate_twod<int>(sizes);
+  int** td = allocate_twod<int>(sizes);
   init_twod(td, sizes, -1);
   print_twod(td, sizes);
   write_twod(td, 0, 3, 3);
@@ -86,10 +86,10 @@ bool basic_test_lab(bool debug = false)
   if (debug) {
     cout << "\n\n----- basic_test_lab(): " << endl;
     cout << "stations: ";
-    print_array(stations);
+    print(stations, array_size(stations));
   }
 
-  int **labs = init_lab(stations);
+  int** labs = init_lab(stations);
   print_twod(labs, stations);
   int lab;
   int station;
@@ -197,7 +197,7 @@ bool basic_test_plane(bool debug = false)
   print_plane(plane);
 
   cout << "\nDeallocating two-d array 'plane' " << endl;
-  // plane = deallocate_twod(plane, 7);
+  plane = deallocate_twod(plane, 7);
   cout << "\n\n---------- D O N E ----------" << endl;
   return true;
 }
@@ -237,7 +237,7 @@ int main(int argc, char **argv)
 
 
 /*
-09_p3_p5_lab_and_plane git:(master) ✗  😊 $> cd build
+09_p5_lab_and_plane git:(master) ✗  😊 $> cd build
 build git:(master) ✗  😊 $> tree ../includes
 ../includes
 ├── lab
