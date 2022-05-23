@@ -89,13 +89,13 @@ bool pointer_array_functions_basic_test(bool debug=false)
   }
 
   //-- --- -- --- -- --- -- --- -- --- -- --- -- --- -- --- -- --- -- --- 
-  cout << "\n\n -- copy function()  (@@)-----" << endl;
+  cout << "\n\n -- copy function() -----" << endl;
   //-- --- -- --- -- --- -- --- -- --- -- --- -- --- -- --- -- --- -- --- 
   
   int copy_1_static[20];
   cout << " void copy_array(dest, src, size):  ";
   copy_array(copy_1_static, a, size); //would also work with dynamic
-  print_array(copy_1_static, size);  //default capacity
+  print_array(copy_1_static, size, 20);  //default capacity
 
   cout << " T* copy_array(src, size):       ";
   int* copy_2_dynamic = copy_array(copy_1_static, size);
@@ -248,8 +248,8 @@ includes
 35 was not found
 
 
- -- copy function()  (@@)-----
- void copy_array(dest, src, size):  ( 7)   [   0  10  20  30  40  50  60 ]
+ -- copy function() -----
+ void copy_array(dest, src, size):  ( 7/20)   [   0  10  20  30  40  50  60 ]
  T* copy_array(src, size):       ( 7/ 7)   [   0  10  20  30  40  50  60 ]
 
 
