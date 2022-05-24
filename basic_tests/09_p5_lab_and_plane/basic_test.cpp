@@ -240,6 +240,8 @@ int main(int argc, char **argv)
 09_p5_lab_and_plane git:(master) ✗  😊 $> cd build
 build git:(master) ✗  😊 $> tree ../includes
 ../includes
+├── array_functions
+│   └── array_functions.h
 ├── lab
 │   ├── lab.cpp
 │   └── lab.h
