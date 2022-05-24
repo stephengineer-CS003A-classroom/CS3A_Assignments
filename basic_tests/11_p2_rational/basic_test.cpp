@@ -44,11 +44,11 @@ bool basic_test_rational(bool debug = false){
   return true;
 }
 
-
 //Lord help me! 
 bool debug = false;
 
-TEST(TEST_BASIC_TEST, BasicTest) {
+TEST(TEST_BASIC_TEST, BasicTest)
+{
   bool success = basic_test_rational(debug);
   EXPECT_EQ(success, true);
 }
