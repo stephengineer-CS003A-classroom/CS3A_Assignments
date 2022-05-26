@@ -36,6 +36,7 @@
 
 ## Chapter 13
 
+- [`13_00_linked_list_functions`](https://classroom.github.com/a/CU7Tt80F), [`NO basic_test.cpp`]<br />
 - [`13_03_simple_list_class`](https://classroom.github.com/a/_JZN1NPZ), [`basic_test.cpp`](basic_tests/13_03_simple_list_class/basic_test.cpp)<br />
 - [`13_07_iterated_list`](https://classroom.github.com/a/PhOp9RKU), [`basic_test.cpp`](basic_tests/13_07_iterated_list/basic_test.cpp)<br />
 - [`13_09_sorted_list`](https://classroom.github.com/a/DFYTSZHc), [`basic_test.cpp`](basic_tests/13_09_sorted_list/basic_test.cpp)<br />
