@@ -6,12 +6,15 @@
 #include <vector>
 #include <list>
 
-using namespace std;
-
 //------------------------------------------------------------------------------
 //Files we are testing:
 #include "../../includes/stack/MyStack.h"
 #include "../../includes/queue/MyQueue.h"
+
+
+//------------------------------------------------------------------------------
+
+using namespace std;
 
 //------------------------------------------------------------------------------
 //          COPY BASIC_TEST INTO THIS FILE.
@@ -69,7 +72,7 @@ bool basic_test(bool debug = false)
 //Lord help me! 
 bool debug = false;
 
-TEST(ITERATED_LIST, TestInsertHead)
+TEST(BASIC_TEST, BasicTest)
 {
   bool success = basic_test(debug);
   EXPECT_EQ(success, true);
