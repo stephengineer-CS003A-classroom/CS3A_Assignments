@@ -24,10 +24,36 @@ using namespace std;
 
 bool basic_test(bool debug = false)
 {
-  Term t1(2,4);
+  //Test Term
+  Term t1(2,5);
   Term t2(3,5);
-  cout << "t1: " << t1 << endl;
-  cout << "t2: " << t2 << endl;
+  Term t3(-6,8);
+  Term t4(t1);
+  cout << " t1: " << t1 << endl;
+  cout << " t2: " << t2 << endl;
+  cout << " t3: " << t3 << endl;
+  cout << "-t1: " << -t1 << endl;
+  cout << "-t2: " << -t2 << endl;
+  cout << "-t3: " << -t3 << endl;
+  cout << "t1 + t2   : " << t1 << " + " << t2 << " = " << t1 + t2 << endl;
+  cout << "t1 - t2   : " << t1 << " - " << t2 << " = " << t1 - t2 << endl;
+  cout << "t1 * t2   : " << t1 << " * " << t2 << " = " << t1 * t2 << endl;
+  cout << "t1 / t2   : " << t1 << " / " << t2 << " = " << t1 / t2 << endl;
+  cout << "t1 * t3   : " << t1 << " * " << t3 << " = " << t1 * t3 << endl;
+  cout << "t1 / t3   : " << t1 << " / " << t3 << " = " << t1 / t3 << endl;
+  if (t1 == t4) {
+    cout << t1 << " = " << t4 << endl;
+  }
+  if (t1 != t2) {
+    cout << t1 << " != " << t2 << endl;
+  }
+  if (t3 > t1) {
+    cout << t3 << " > " << t1 << endl;
+  }
+  if (t1 < t3) {
+    cout << t1 << " < " << t3 << endl;
+  }
+  //Test Poly
   double coefs1[] = {8.0,5.0,6.0,0.0,4.0};
   double coefs2[] = {2.0,7.0,3.0,0.0,1.0,9.0};
   Poly p(coefs1, 4);
@@ -98,8 +124,22 @@ includes
 [----------] Global test environment set-up.
 [----------] 1 test from TEST_BASIC_TEST
 [ RUN      ] TEST_BASIC_TEST.BasicTest
-t1: +2.0X^4
-t2: +3.0X^5
+ t1: +2.0X^5
+ t2: +3.0X^5
+ t3: -6.0X^8
+-t1: -2.0X^5
+-t2: -3.0X^5
+-t3: +6.0X^8
+t1 + t2   : +2.0X^5 + +3.0X^5 = +5.0X^5
+t1 - t2   : +2.0X^5 - +3.0X^5 = -1.0X^5
+t1 * t2   : +2.0X^5 * +3.0X^5 = +6.0X^10
+t1 / t2   : +2.0X^5 / +3.0X^5 = +0.7^0
+t1 * t3   : +2.0X^5 * -6.0X^8 = -12.0X^13
+t1 / t3   : +2.0X^5 / -6.0X^8 = -0.3X^-3
++2.0X^5 = +2.0X^5
++2.0X^5 != +3.0X^5
+-6.0X^8 > +2.0X^5
++2.0X^5 < -6.0X^8
 p: [+4.0X^4 +0.0X^3 +6.0X^2 +5.0X +8.0 ]
 q: [+9.0X^5 +1.0X^4 +0.0X^3 +3.0X^2 +7.0X +2.0 ]
 p[2]: +6.0X^2
