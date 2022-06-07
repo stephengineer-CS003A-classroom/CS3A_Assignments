@@ -27,24 +27,53 @@ bool basic_test(bool debug = false)
 {
   node<int>* head = nullptr;
   node<int>* marker;
+  node<int>* buffer;
 
-  _insert_head(head, 99);
+  buffer = _insert_after(head, head, 77);
+  cout << "_insert_after: " << buffer->_item << endl;
+
+  buffer = _insert_head(head, 99);
+  cout << "_insert_head: " << buffer->_item << endl;
   marker = head;
-
-  _insert_after(head, head, 77);
-  _insert_after(head, head, 88);
   
-  marker = marker->_next->_next;
-  _insert_after(head, marker, 55);
+  buffer = _insert_after(head, head, 88);
+  cout << "_insert_after: " << buffer->_item << endl;
+  
+  marker = marker->_next->_next; // marker is 77
+  buffer = _insert_after(head, marker, 55);
+  cout << "_insert_after: " << buffer->_item << endl;
 
-  marker = marker->_next;
-  _insert_before(head, marker, 66);
-
+  marker = marker->_next; // marker is 55
+  buffer = _insert_before(head, marker, 66);
+  cout << "_insert_before: " << buffer->_item << endl;
   _print_list(head);
-  cout << "Inserted: " << _previous_node(head, marker)->_item << endl;
+  cout << endl;
 
-  cout << "Deleted: " << _delete_node(head, marker) << endl;
+  cout << "_previous_node: " << _previous_node(head, marker)->_item << endl;
+  cout << "_delete_node: " << _delete_node(head, marker) << endl;
   _print_list(head);
+  cout << endl;
+
+  cout << "_search_list: " << _search_list(head, 77)->_item << endl;
+  if (!_search_list(head, 11)) {
+    cout << "11 is not in the list\n";
+  }
+  cout << endl;
+
+  buffer = _copy_list(head);
+  cout << "_copy_list: \nbuffer: ";
+  _print_list(buffer);
+  cout << "head: ";
+  _print_list(buffer);
+  cout << endl;
+
+  _clear_list(buffer);
+  if(!buffer) {
+    cout << "buffer is cleared\n";
+  }
+  cout << endl;
+
+  cout << "_at 2 is " << _at(head, 2) << endl;
 
   cout << "\n\n-------- DONE ---------\n\n" << endl;
   return true;
@@ -86,10 +115,28 @@ includes
 [----------] Global test environment set-up.
 [----------] 1 test from BASIC_TEST
 [ RUN      ] BASIC_TEST.BasicTest
+_insert_after: 77
+_insert_head: 99
+_insert_after: 88
+_insert_after: 55
+_insert_before: 66
 [99]->[88]->[77]->[66]->[55]->|||
-Inserted: 66
-Deleted: 55
+
+_previous_node: 66
+_delete_node: 55
 [99]->[88]->[77]->[66]->|||
+
+_search_list: 77
+11 is not in the list
+
+_copy_list: 
+buffer: [99]->[88]->[77]->[66]->|||
+head: [99]->[88]->[77]->[66]->|||
+
+buffer is cleared
+
+_at 2 is 77
+
 
 -------- DONE ---------
 
