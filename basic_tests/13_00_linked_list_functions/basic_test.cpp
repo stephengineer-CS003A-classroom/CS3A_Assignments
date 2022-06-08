@@ -64,7 +64,7 @@ bool basic_test(bool debug = false)
   cout << "_copy_list: \nbuffer: ";
   _print_list(buffer);
   cout << "head: ";
-  _print_list(buffer);
+  _print_list(head);
   cout << endl;
 
   _clear_list(buffer);
