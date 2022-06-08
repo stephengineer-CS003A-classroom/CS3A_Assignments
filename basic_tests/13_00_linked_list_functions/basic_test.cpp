@@ -63,7 +63,7 @@ bool basic_test(bool debug = false)
   buffer = _copy_list(head);
   cout << "_copy_list: \nbuffer: ";
   _print_list(buffer);
-  cout << "head: ";
+  cout << "head  : ";
   _print_list(head);
   cout << endl;
 
@@ -131,7 +131,7 @@ _search_list: 77
 
 _copy_list: 
 buffer: [99]->[88]->[77]->[66]->|||
-head: [99]->[88]->[77]->[66]->|||
+head  : [99]->[88]->[77]->[66]->|||
 
 buffer is cleared
 
