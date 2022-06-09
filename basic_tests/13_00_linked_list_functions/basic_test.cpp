@@ -61,7 +61,17 @@ bool basic_test(bool debug = false)
   cout << endl;
 
   buffer = _copy_list(head);
-  cout << "_copy_list: \nbuffer: ";
+  cout << "_copy_list:\n";
+  cout << "buffer: ";
+  _print_list(buffer);
+  cout << "head  : ";
+  _print_list(head);
+  cout << endl;
+
+  marker = head->_next; // marker is 44
+  _insert_after(head, marker, 44);
+  cout << "modify head linked list, buffer is not changed:\n";
+  cout << "buffer: ";
   _print_list(buffer);
   cout << "head  : ";
   _print_list(head);
@@ -129,14 +139,17 @@ _delete_node: 55
 _search_list: 77
 11 is not in the list
 
-_copy_list: 
+_copy_list:
 buffer: [99]->[88]->[77]->[66]->|||
 head  : [99]->[88]->[77]->[66]->|||
 
+modify head linked list, buffer is not changed:
+buffer: [99]->[88]->[77]->[66]->|||
+head  : [99]->[88]->[44]->[77]->[66]->|||
+
 buffer is cleared
 
-_at 2 is 77
-
+_at 2 is 44
 
 -------- DONE ---------
 
