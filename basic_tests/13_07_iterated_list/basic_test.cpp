@@ -25,29 +25,100 @@ using namespace std;
 bool basic_test(bool debug = false)
 {
   List<int> list;
-  cout << "list.empty(): " << boolalpha << list.empty() << endl;
+  // check list size
+  cout << "list.size(): " << list.size() << endl;
+  cout << "list.empty(): " << boolalpha << list.empty() << endl << endl;
+
+  // insert items
   for (int i = 1; i < 6; i++)
   {
     list.insert_head(i);
     list.insert_after(i * 10, list.begin());
     list.insert_before(i * 100, list.begin());
-    cout << list << endl;
+    cout << list;
   }
-  List<int>::Iterator it = list.search(4);
-  cout << "found 4: " << *it << endl;
+  cout << endl;
+
+  List<int> list2(list);
+  for (int i=0; i<list2.size(); i++) {
+    if (list[i] != list2[i]) {
+      cout << "copy constructor is wrong" << endl << endl;
+      break;
+    }
+  }
+  cout << "copy constructor is ok" << endl << endl;
+
+  List<int>::Iterator it;
+  // found non-existing node
+  it = list.search(99);
+  if (it) {
+    cout << "found " << *it << endl;
+  } else {
+    cout << "not found 99" << endl;
+  }
+  // found existing node
+  it = list.search(4);
+  if (it) {
+    cout << "found " << *it << endl;
+  } else {
+    cout << "not found 4" << endl;
+  }
+  cout << endl;
+
+  // compare two iterators
+  List<int>::Iterator it_2 = list.search(4);
+  if (it == it_2) {
+    cout << "iterators point to same node" << endl;
+  } else {
+    cout << "iterators point to different node" << endl;
+  }
+  it_2 = list.search(300);
+  if (it != it_2) {
+    cout << "iterators point to different node" << endl;
+  } else {
+    cout << "iterators point to same node" << endl;
+  }
+  cout << endl;
+
+  // check previous node and delete it
   it = list.prev(it);
   cout << "previous to 4: " << *it << endl;
   list.Delete(it);
-  cout << "deleted the prev: " << list << endl;
+  cout << "deleted the prev : " << list << endl;
+
+  // check it++ and ++it
+  cout << "it++ is: " << *(it_2++) << endl;
+  cout << "++it is: " << *(++it_2) << endl;
   cout << endl;
-  cout << "iterating all the nodes: " << endl;
+
+  // traverse list
+  cout << "iterating all the nodes by *it" << endl;
   for (it = list.begin(); it != list.end(); it++)
   {
     cout << *it << " ";
   }
   cout << endl;
+  cout << "iterating all the nodes by list[i]" << endl;
+  for (int i=0; i<list.size(); i++)
+  {
+    cout << list[i] << " ";
+  }
+  cout << endl << endl;
+
+  list2 = list;
+  for (int i=0; i<list2.size(); i++) {
+    if (list[i] != list2[i]) {
+      cout << "assign operator is wrong" << endl << endl;
+      break;
+    }
+  }
+  cout << "assign operator is ok" << endl << endl;
+
+  // check list size
+  cout << "list.size(): " << list.size() << endl;
   cout << "list.empty(): " << boolalpha << list.empty() << endl;
-  cout << "\n\n--------- D O N E ----------------" << endl;
+
+  cout << "\n\n--------- D O N E ----------------" << endl << endl;
   return true;
 }
 
@@ -88,19 +159,42 @@ build git:(master)  😊 $> ./bin/basic_test
 [----------] Global test environment set-up.
 [----------] 1 test from ITERATED_LIST
 [ RUN      ] ITERATED_LIST.TestInsertHead
+list.size(): 0
 list.empty(): true
-[100]-> [1]-> [10]-> |||
-[200]-> [2]-> [20]-> [100]-> [1]-> [10]-> |||
-[300]-> [3]-> [30]-> [200]-> [2]-> [20]-> [100]-> [1]-> [10]-> |||
-[400]-> [4]-> [40]-> [300]-> [3]-> [30]-> [200]-> [2]-> [20]-> [100]-> [1]-> [10]-> |||
-[500]-> [5]-> [50]-> [400]-> [4]-> [40]-> [300]-> [3]-> [30]-> [200]-> [2]-> [20]-> [100]-> [1]-> [10]-> |||
-found 4: 4
+
+[100]->[1]->[10]->|||
+[200]->[2]->[20]->[100]->[1]->[10]->|||
+[300]->[3]->[30]->[200]->[2]->[20]->[100]->[1]->[10]->|||
+[400]->[4]->[40]->[300]->[3]->[30]->[200]->[2]->[20]->[100]->[1]->[10]->|||
+[500]->[5]->[50]->[400]->[4]->[40]->[300]->[3]->[30]->[200]->[2]->[20]->[100]->[1]->[10]->|||
+
+copy constructor is ok
+
+not found 99
+found 4
+
+iterators point to same node
+iterators point to different node
+
 previous to 4: 400
-deleted the prev: [500]-> [5]-> [50]-> [4]-> [40]-> [300]-> [3]-> [30]-> [200]-> [2]-> [20]-> [100]-> [1]-> [10]-> |||
-iterating all the nodes: 
+deleted the prev : [500]->[5]->[50]->[4]->[40]->[300]->[3]->[30]->[200]->[2]->[20]->[100]->[1]->[10]->|||
+
+it++ is: 300
+++it is: 30
+
+iterating all the nodes by *it
 500 5 50 4 40 300 3 30 200 2 20 100 1 10 
+iterating all the nodes by list[i]
+500 5 50 4 40 300 3 30 200 2 20 100 1 10 
+
+assign operator is ok
+
+list.size(): 14
 list.empty(): false
+
+
 --------- D O N E ----------------
+
 [       OK ] ITERATED_LIST.TestInsertHead (0 ms)
 [----------] 1 test from ITERATED_LIST (0 ms total)
 [----------] Global test environment tear-down
