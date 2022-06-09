@@ -23,8 +23,8 @@
 
 using namespace std;
 
-bool basic_test(bool debug = false){
-
+bool basic_test(bool debug = false)
+{
   List<int> list;
   node<int> *marker;
   cout << "list.empty(): " << boolalpha << list.empty() << endl;
@@ -44,8 +44,14 @@ bool basic_test(bool debug = false){
   cout << "iterating all the nodes: " << endl;
   for (marker = list.begin(); marker != list.end(); marker=marker->_next)
   {
-    cout << *marker << " ";
+    cout << *marker;
   }
+  cout << endl << "iterating all the nodes: " << endl;
+  for (int i=0; i<list.size(); i++)
+  {
+    cout << list[i] << " -> ";
+  }
+  
   cout << endl;
   cout << "list.empty(): " << boolalpha << list.empty() << endl;
 
@@ -71,7 +77,7 @@ int main(int argc, char **argv)
     debug = argv[1][0]=='t';
   }
   ::testing::InitGoogleTest(&argc, argv);
-  std::cout<<"\n\n----------running testA.cpp---------\n\n"<<std::endl;
+  std::cout<<"\n\n----------running basic_test.cpp---------\n\n"<<std::endl;
   return RUN_ALL_TESTS();
 }
 
@@ -87,7 +93,7 @@ includes
     └── node.h
 3 directories, 3 files
 13_03_simple_list_class git:(master)  😊 $> ./build/bin/basic_test
-----------running testA.cpp---------
+----------running basic_test.cpp---------
 [==========] Running 1 test from 1 test case.
 [----------] Global test environment set-up.
 [----------] 1 test from BASIC_TEST
@@ -104,6 +110,8 @@ deleted the prev: [500]-> [5]-> [50]-> [4]-> [40]-> [300]-> [3]-> [30]-> [200]->
 
 iterating all the nodes: 
 [500]->  [5]->  [50]->  [4]->  [40]->  [300]->  [3]->  [30]->  [200]->  [2]->  [20]->  [100]->  [1]->  [10]->  
+iterating all the nodes: 
+500 -> 5 -> 50 -> 4 -> 40 -> 300 -> 3 -> 30 -> 200 -> 2 -> 20 -> 100 -> 1 -> 10 -> 
 list.empty(): false
 
 
