@@ -23,29 +23,71 @@ using namespace std;
 
 bool basic_test(bool debug = false)
 {
-  List<int> list;
-  cout << "list.empty(): " << boolalpha << list.empty() << endl;
+  // Test 1: ascending, duplicate(not unique)
+  cout << "ascending, duplicate(not unique)\n";
+  bool ascending = true;
+  bool unique = false;
+  List<int> list_a_d(ascending, unique); 
   for (int i = 1; i < 6; i++)
   {
-    list.insert(i);
-    list.insert(i * 10);
-    list.insert(i * 100);
-    cout << list << endl;
+    list_a_d.insert(i);
+    list_a_d.insert(i * 10);
   }
-  List<int>::Iterator it = list.search(4);
-  cout << "found 4: " << *it << endl;
-  it = list.prev(it);
-  cout << "previous to 4: " << *it << endl;
-  list.Delete(it);
-  cout << "deleted the prev: " << list << endl;
-  cout << endl;
-  cout << "iterating all the nodes: " << endl;
-  for (it = list.begin(); it != list.end(); it++)
+  cout << list_a_d;
+  for (int i = 3; i < 13; i++)
   {
-    cout << *it << " ";
+    list_a_d.insert(i);
   }
-  cout << endl;
-  cout << "list.empty(): " << boolalpha << list.empty() << endl;
+  cout << list_a_d << endl;
+
+  // Test 2: descending, duplicate(not unique)
+  cout << "descending, duplicate(not unique)\n";
+  ascending = false;
+  unique = false;
+  List<int> list_d_d(ascending, unique); 
+  for (int i = 1; i < 6; i++)
+  {
+    list_d_d.insert(i);
+    list_d_d.insert(i * 10);
+  }
+  cout << list_d_d;
+  for (int i = 3; i < 13; i++)
+  {
+    list_d_d.insert(i);
+  }
+  cout << list_d_d << endl;
+
+  // Test 3: ascending, unique
+  cout << "ascending, unique\n";
+  ascending = true;
+  unique = true;
+  List<int> list_a_u(ascending, unique); 
+  for (int i = 3; i < 7; i++)
+  {
+    list_a_u.insert(i);
+    list_a_u.insert(i * 10);
+  }
+  cout << list_a_u;
+  list_a_u.insert(1);
+  list_a_u.insert(5);
+  list_a_u.insert(30);
+  cout << list_a_u << endl;
+
+  // Test 4: descending, unique
+  cout << "descending, unique\n";
+  ascending = false;
+  unique = true;
+  List<int> list_d_u(ascending, unique); 
+  for (int i = 3; i < 7; i++)
+  {
+    list_d_u.insert(i);
+    list_d_u.insert(i * 10);
+  }
+  cout << list_d_u;
+  list_d_u.insert(70);
+  list_d_u.insert(5);
+  list_d_u.insert(30);
+  cout << list_d_u << endl;
 
   cout << "\n\n---------- D O N E ---------------\n\n";
   return true;
@@ -88,19 +130,25 @@ build git:(master) ✗  😊 $> ./bin/basic_test
 [----------] Global test environment set-up.
 [----------] 1 test from BASIC_TEST
 [ RUN      ] BASIC_TEST.BasicTest
-list.empty(): true
-[1]-> [10]-> [100]-> |||
-[1]-> [2]-> [10]-> [20]-> [100]-> [200]-> |||
-[1]-> [2]-> [3]-> [10]-> [20]-> [30]-> [100]-> [200]-> [300]-> |||
-[1]-> [2]-> [3]-> [4]-> [10]-> [20]-> [30]-> [40]-> [100]-> [200]-> [300]-> [400]-> |||
-[1]-> [2]-> [3]-> [4]-> [5]-> [10]-> [20]-> [30]-> [40]-> [50]-> [100]-> [200]-> [300]-> [400]-> [500]-> |||
-found 4: 4
-previous to 4: 3
-deleted the prev: [1]-> [2]-> [4]-> [5]-> [10]-> [20]-> [30]-> [40]-> [50]-> [100]-> [200]-> [300]-> [400]-> [500]-> |||
-iterating all the nodes: 
-1 2 4 5 10 20 30 40 50 100 200 300 400 500 
-list.empty(): false
+ascending, duplicate(not unique)
+[1]->[2]->[3]->[4]->[5]->[10]->[20]->[30]->[40]->[50]->|||
+[1]->[2]->[3]->[3]->[4]->[4]->[5]->[5]->[6]->[7]->[8]->[9]->[10]->[10]->[11]->[12]->[20]->[30]->[40]->[50]->|||
+
+descending, duplicate(not unique)
+[50]->[40]->[30]->[20]->[10]->[5]->[4]->[3]->[2]->[1]->|||
+[50]->[40]->[30]->[20]->[12]->[11]->[10]->[10]->[9]->[8]->[7]->[6]->[5]->[5]->[4]->[4]->[3]->[3]->[2]->[1]->|||
+
+ascending, unique
+[3]->[4]->[5]->[6]->[30]->[40]->[50]->[60]->|||
+[1]->[3]->[4]->[10]->[6]->[60]->[40]->[50]->[60]->|||
+
+descending, unique
+[60]->[50]->[40]->[30]->[6]->[5]->[4]->[3]->|||
+[70]->[60]->[50]->[40]->[60]->[6]->[10]->[4]->[3]->|||
+
+
 ---------- D O N E ---------------
+
 [       OK ] BASIC_TEST.BasicTest (0 ms)
 [----------] 1 test from BASIC_TEST (0 ms total)
 [----------] Global test environment tear-down
