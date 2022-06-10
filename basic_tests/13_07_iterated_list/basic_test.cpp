@@ -39,6 +39,7 @@ bool basic_test(bool debug = false)
   }
   cout << endl;
 
+  // check copy constructor
   List<int> list2(list);
   for (int i=0; i<list2.size(); i++) {
     if (list[i] != list2[i]) {

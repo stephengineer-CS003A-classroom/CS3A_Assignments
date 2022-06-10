@@ -83,7 +83,9 @@ bool basic_test(bool debug = false)
   }
   cout << endl;
 
-  cout << "_at 2 is " << _at(head, 2) << endl;
+  cout << "_at 2 is " << _at(head, 2) << endl << endl;
+
+  cout << "last node is " << _last_node(head)->_item << endl;
 
   cout << "\n\n-------- DONE ---------\n\n" << endl;
   return true;
@@ -150,6 +152,8 @@ head  : [99]->[88]->[44]->[77]->[66]->|||
 buffer is cleared
 
 _at 2 is 44
+
+last node is 66
 
 -------- DONE ---------
 
