@@ -7,6 +7,12 @@
 # <p align="center">CS3A Assignment Links</p>
 
 
+## Reviews
+- [`00_review_01_roman_numerals`](), [`main.cpp`](basic_tests/00_review_01_roman_numerals/main.cpp)<br />
+- [`00_review_02_histogram`](), [`main.cpp`](basic_tests/00_review_02_histogram/main.cpp)<br />
+- [`00_review_03_black_jack`]()<br />
+
+
 ## Labs
 
 - [`00_lab_0`](), [`basic_test.cpp`](basic_tests/00_lab_0/basic_test.cpp)<br />

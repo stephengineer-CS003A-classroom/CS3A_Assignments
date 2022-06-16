@@ -10,6 +10,7 @@
 ## Reviews
 - [`00_review_01_roman_numerals`](https://classroom.github.com/a/_Tt02KfV), [`main.cpp`](basic_tests/00_review_01_roman_numerals/main.cpp)<br />
 - [`00_review_02_histogram`](https://classroom.github.com/a/ERqJ8She), [`main.cpp`](basic_tests/00_review_02_histogram/main.cpp)<br />
+- [`00_review_03_black_jack`](https://classroom.github.com/a/E_Y-7xL0)<br />
 
 
 ## Labs
