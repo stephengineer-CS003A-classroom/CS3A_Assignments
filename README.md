@@ -56,10 +56,3 @@
 ## Final project
 
 - [`99_00_final_project`](https://classroom.github.com/a/rUUpsXPd)<br />
-
-
-## SFML
-
-- [`start_SFML`]()<br />
-- [`bouncing_bubbles`]()<br />
-- [`bouncing_shapes`]()<br />
