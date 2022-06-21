@@ -1,7 +1,7 @@
 # Lab 0 git clone, status, add, commit and push 
 
-- [ ] Accept [00_lab_0](https://classroom.github.com/a/kk1kb4Ne)
-- [ ] Get [basic_test.cpp](basic_test.cpp)
+- Accept [00_lab_0](https://classroom.github.com/a/kk1kb4Ne)
+- Get [basic_test.cpp](basic_test.cpp)
 
 Before working on assignment, [setup system environment](https://github.com/stephengineer-CS003A-classroom/CS3A_Setup).
 
