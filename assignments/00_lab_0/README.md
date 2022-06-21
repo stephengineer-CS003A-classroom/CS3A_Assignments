@@ -3,7 +3,7 @@
 - Accept [00_lab_0](https://classroom.github.com/a/kk1kb4Ne)
 - Get [basic_test.cpp](basic_test.cpp)
 
-Before working on assignment, [setup system environment](https://github.com/stephengineer-CS003A-classroom/CS3A_Setup).
+Before working on assignment, [setup system environment](https://github.com/stephengineer-CS003A-classroom/CS3A_Setup) first.
 
 
 The following code is the prototype of functions in `array_functions.h`, and you need to implement functions in `array_functions.cpp`
