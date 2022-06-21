@@ -3,6 +3,7 @@
 - Accept [09_01_pointer_array_functions](https://classroom.github.com/a/45WayU5_)
 - Get [basic_test.cpp](basic_test.cpp)
 
+---
 
 - The following functions will be used in several projects in this term.
 - Write these functions and test them well.
