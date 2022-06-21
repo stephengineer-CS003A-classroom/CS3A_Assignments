@@ -57,4 +57,3 @@
 ## Final project
 
 - [`99_00_final_project`](assignments/99_00_final_project)
-- 
